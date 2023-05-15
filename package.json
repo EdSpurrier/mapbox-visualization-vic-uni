@@ -1,0 +1,25 @@
+{
+  "name": "mapbox-visualization-vic-uni",
+  "version": "1.0.0",
+  "description": "Visualizing spreadsheet data in a Mapbox interactive map. [Victoria University]",
+  "main": "index.js",
+  "scripts": {
+    "server": "node scripts/server.js",
+    "parse-data": "node scripts/generate-data.js",
+    "watch-data": "nodemon --watch input/*.* scripts/generate-data.js",
+    "watch-server": "nodemon --watch scripts scripts/server.js",
+    "dev": "concurrently --kill-others \"npm run watch-data\" \"npm run watch-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ed Spurrier",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
