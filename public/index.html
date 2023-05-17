@@ -1,11 +1,33 @@
 <html>
-   <body>
-      Using this => https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm#
-      <form action = "http://127.0.0.1:8081/process_get" method = "GET">
-         First Name: <input type = "text" name = "first_name">  <br>
-         Last Name: <input type = "text" name = "last_name">
-         <input type = "submit" value = "Submit">
-      </form>
+   <head>
+      <title>Data Visualization Example</title>
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+      <!-- Your HTML content here -->
+        <div class="charts">
+            <div class="chart">
+                CSV
+                <canvas id="csvDataChart" class="barChart"></canvas>
+            </div>
+
+            <div class="chart">
+                XLSX
+                <canvas id="xlsxDataChart" class="barChart"></canvas>
+            </div>
+
+            <div class="chart">
+                Example ChartJS JSON
+                <canvas id="exampleDataChart" class="barChart"></canvas>
+            </div>
+            
+        </div>
       
-   </body>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="script.js"></script>
+  </body>
 </html>

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run watch-server",
     "server": "node scripts/server.js",
-    "parse-data": "node scripts/generate-data.js",
+    "build-data": "node scripts/generate-data.js",
     "watch-data": "nodemon --watch input/*.* scripts/generate-data.js",
     "watch-server": "nodemon --watch scripts scripts/server.js",
     "dev": "concurrently --kill-others \"npm run watch-data\" \"npm run watch-server\"",
@@ -15,10 +15,11 @@
   "author": "Ed Spurrier",
   "license": "ISC",
   "dependencies": {
-    "csvtojson": "^2.0.10",
     "express": "^4.18.2",
+    "livereload-express": "^1.0.3",
     "nodemon": "^2.0.22",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "concurrently": "^8.0.1"

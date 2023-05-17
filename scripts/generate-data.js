@@ -1,4 +1,6 @@
 console.log('RUNNING => generate-data.js');
 
 
-require("./convertJSON.js");
+require("./convertCSVtoJSON.js");
+
+require("./convertXLSXtoJSON.js");

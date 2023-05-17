@@ -1,0 +1,19 @@
+/* Define styles for the chart container */
+.charts {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.chart {
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.barChart {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
