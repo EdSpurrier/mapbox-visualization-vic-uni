@@ -4,6 +4,7 @@
   "description": "Visualizing spreadsheet data in a Mapbox interactive map. [Victoria University]",
   "main": "index.js",
   "scripts": {
+    "start": "npm run watch-server",
     "server": "node scripts/server.js",
     "parse-data": "node scripts/generate-data.js",
     "watch-data": "nodemon --watch input/*.* scripts/generate-data.js",
